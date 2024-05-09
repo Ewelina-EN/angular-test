@@ -1,4 +1,50 @@
-/* You can add global styles to this file, and also import other style files */
+$font-family: 'Hind', sans-serif;
+$global-border: 1px solid #C4C5C7;
+$global-color: #efefef;
+$container-color: #ffffff;
+$button-color: #326DF3;
+$padding-size: 16px;
+$border-radius: 5px;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+    background-color: $global-color;
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+    height: 100%;
+    font-family: $font-family;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    border: $global-border;
+    border-radius: $border-radius;
+    background-color: $container-color;
+
+}
+
+button {
+    background-color: $button-color;
+    color: $container-color;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-family: $font-family;
+    cursor: pointer;
+
+        &:hover {
+            background-color: darken($button-color, 10%);
+        }
+
+        &:focus {
+            outline: none;
+        }
+}
