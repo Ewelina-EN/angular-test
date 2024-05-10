@@ -30,21 +30,3 @@ div {
     background-color: $container-color;
 
 }
-
-button {
-    background-color: $button-color;
-    color: $container-color;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-family: $font-family;
-    cursor: pointer;
-
-        &:hover {
-            background-color: darken($button-color, 10%);
-        }
-
-        &:focus {
-            outline: none;
-        }
-}
