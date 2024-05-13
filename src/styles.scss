@@ -2,6 +2,7 @@ $font-family: 'Hind', sans-serif;
 $global-border: 1px solid #C4C5C7;
 $global-color: #efefef;
 $container-color: #ffffff;
+$font-color: #797a80;
 $button-color: #326DF3;
 $padding-size: 16px;
 $border-radius: 5px;
@@ -19,7 +20,7 @@ body {
     box-sizing: border-box;
 }
 
-div {
+main-page {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,5 +29,4 @@ div {
     border: $global-border;
     border-radius: $border-radius;
     background-color: $container-color;
-
 }

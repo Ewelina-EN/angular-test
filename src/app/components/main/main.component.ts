@@ -3,7 +3,7 @@ import { RouterLink } from "@angular/router";
 import { ButtonComponent } from "../shared/button/button.component";
 
 @Component({
-    selector: 'main',
+    selector: 'main-page',
     standalone: true,
     imports: [RouterLink, ButtonComponent],
     templateUrl: './main.component.html',

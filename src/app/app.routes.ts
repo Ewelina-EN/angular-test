@@ -12,6 +12,11 @@ export const routes: Routes = [
     {
         path: 'table',
         component: TableComponent
+    },
+    {
+        path: 'table/:page',
+        component: TableComponent
+    
     }
 ];
 

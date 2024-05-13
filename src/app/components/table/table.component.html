@@ -1,3 +1,33 @@
-<div>
-    <app-button label="Back" route="/"></app-button>
+<div class='container'>
+    <app-button class='table-btn' label="Back" route="/"></app-button>
+
+    <mat-table [dataSource]="dataSource" matSort (matSortChange)="handleSort($event)">
+
+        <!-- Column Definitions -->
+        <ng-container matColumnDef="created_at">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header="created_at">Created
+                On
+            </th>
+            <td mat-cell *matCellDef="let issue">{{ issue.created_at }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="updated_at">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header="updated_at">Updated
+                On</th>
+            <td mat-cell *matCellDef="let issue">{{ issue.updated_at }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="title">
+            <th mat-header-cell *matHeaderCellDef>Title</th>
+            <td mat-cell *matCellDef="let issue">{{ issue.title }}</td>
+        </ng-container>
+
+        <!-- Row and Header Declarations -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns" class='header-row'></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </mat-table>
+
+    <mat-paginator [length]="length" [pageSize]="pageSize" [hidePageSize]="true" showFirstLastButtons
+        (page)="handlePageEvent($event)"></mat-paginator>
+
 </div>

@@ -1,0 +1,36 @@
+@import '../../../styles.scss';
+
+.container {
+    display: flex;
+    flex-direction: column;
+    // height: 100vh;
+    height: 720px;
+    border: $global-border;
+    border-radius: $border-radius;
+    background-color: $container-color;
+    padding: 16px;
+}
+
+.table-btn {
+    margin-bottom: 10px;
+}
+
+// .table-container {
+//     overflow: auto;
+//     flex: 1;
+//     border: $global-border;
+// }
+
+.header-row {
+    background-color: $global-color;
+    font-weight: bold;
+    color: $font-color;
+    width: 100%;
+    overflow: auto;
+    flex: 1;
+    border: $global-border;
+}
+
+.mat-mdc-row, .mdc-data-table__content {
+    font-style: $font-family;
+}
