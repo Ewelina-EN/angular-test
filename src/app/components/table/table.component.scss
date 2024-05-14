@@ -3,34 +3,76 @@
 .container {
     display: flex;
     flex-direction: column;
-    // height: 100vh;
-    height: 720px;
     border: $global-border;
     border-radius: $border-radius;
     background-color: $container-color;
-    padding: 16px;
+    padding: $padding-size;
+    // height: 720px;
 }
 
 .table-btn {
     margin-bottom: 10px;
 }
 
-// .table-container {
-//     overflow: auto;
-//     flex: 1;
-//     border: $global-border;
-// }
-
-.header-row {
+.table-section {
     background-color: $global-color;
     font-weight: bold;
     color: $font-color;
-    width: 100%;
-    overflow: auto;
-    flex: 1;
-    border: $global-border;
+    border: $table-border;
+    width: auto;
+    overflow-x: auto;
 }
 
-.mat-mdc-row, .mdc-data-table__content {
-    font-style: $font-family;
+.header-row {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: $global-color;
+    color: $font-color;
+    height: 40px;
+    font-weight: 500;
+    font-size: $font-size;
+    line-height: 24px;
+}
+
+.table-header_cell {
+    display: flex;
+    padding: 0 0 0 5px;
+    width: 105px;
+    border: none;
+ }
+
+.table-data-container {
+    overflow-y: auto;
+    max-height: 585px;
+}
+
+.table-data {
+    width: 100%;
+  
+}
+
+.data-cell {
+    color: $font-color;
+    padding: 0 0 0 5px;
+    min-width: 105px;
+    height: auto;
+    border: none;
+    font-size: $font-size;
+    font-weight: 500;
+}
+
+.pagination {
+    color: $font-color
+}
+
+.data-row {
+    height: auto;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    border-bottom: $table-border;
 }

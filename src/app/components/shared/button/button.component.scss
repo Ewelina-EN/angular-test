@@ -5,13 +5,13 @@ button[mat-button] {
     color: $container-color;
     border: none;
     border-radius: 5px;
-    padding: 12px 24px;
+    padding: 20px 24px;
     font-family: $font-family;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 14px;
     cursor: pointer;
-    padding: 8px 24px;
     line-height: 24px;
+    letter-spacing: normal;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   
         &:hover {

@@ -1,8 +1,11 @@
 $font-family: 'Hind', sans-serif;
+$font-color: #787A80;
+$font-size: 14px;
 $global-border: 1px solid #C4C5C7;
 $global-color: #efefef;
+$table-border: 1px solid #e2e2e2;
+$header-color: #e2e2e2;
 $container-color: #ffffff;
-$font-color: #797a80;
 $button-color: #326DF3;
 $padding-size: 16px;
 $border-radius: 5px;
@@ -13,11 +16,11 @@ body {
     padding: 16px;
     width: 100%;
     height: 100%;
-    font-family: $font-family;
 }
 
 * {
     box-sizing: border-box;
+    font-family: $font-family;
 }
 
 main-page {
@@ -25,8 +28,9 @@ main-page {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 97vh;
     border: $global-border;
     border-radius: $border-radius;
     background-color: $container-color;
+    overflow: hidden;
 }
