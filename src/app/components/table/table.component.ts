@@ -73,7 +73,7 @@ export class TableComponent implements OnInit {
     handleSort(sortState: Sort) {
         const sortField = sortState.active;
         const sortOrder = sortState.direction;
-        const pageIndex = this.paginator.pageIndex + 1;  // Uzyskaj aktualny indeks strony
+        const pageIndex = this.paginator.pageIndex + 1;
 
         this.router.navigate(['/table'], {
             queryParams: { page: pageIndex, sort: sortField, order: sortOrder },
